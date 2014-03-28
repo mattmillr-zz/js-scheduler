@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title>Gigzolo Scheduler</title>
+	<link rel="stylesheet" href="scheduler.css">
+</head>
+<body>
+
+  <div id="menu">
+  	<ul>
+  		<li><a href="#user-admin">Manage Users</a></li>
+  		<li><a href="#calendar">Calendar</a></li>
+  </div> 
+	<div id="user-list">
+		<ul>
+			<li class="template" id="user-list-item-template">
+				<div class="color-dot"></div>
+				<span class="name">
+					<span data-bind="firstName" class="first-name">Bob</span>
+					<span data-bind="lastName" class="last-name">Smith</span>
+				</span>
+				<span data-bind="email" class="email">bob@smith.com</span>
+			</li>
+		</ul>
+	</div>
+  <div id="user-admin" class="view">
+  	<div class="template user-form" id="user-form-template">
+  		<form>
+  			<div>
+  				<label for="first-name">First</label>
+  				<input type="test" data-bind="firstName"/>
+  			</div>
+  			<div>
+  				<label for="last-name">Last</label>
+  				<input type="test" data-bind="lastName"/>
+  			</div>
+  			<div>
+  				<label for="email">Email</label>
+  				<input type="test" data-bind="email"/>
+  			</div>
+  			<div>
+  				<input type="submit" class="submit-add" value="Add">
+  				<input type="submit" class="submit-edit" style="display: none;" value="Edit">
+  			</div>
+  	</div>
+  	<div id="user-form-container">
+  	</div>
+  	<a id="new-user">Create a New User</a>
+  </div>
+  <div id="calendar" class="view">
+  	<table>
+  		<thead>
+  			<tr>
+  				<th>Monday</th>
+  				<th>Tuesday</th>
+  				<th>Wednesday</th>
+  				<th>Thursday</th>
+  				<th>Friday</th>
+  				<th>Saturday</th>
+  				<th>Sunday</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			<tr class="template" id="schedule-row-template">
+  				<td class="template" id="schedule-cell-template">
+  					<div class="template schedule-block" id="schedule-block-template">
+  						<div class="scheduled" style="display: none;">
+								<span data-bind="block.slot" class="slot">1</span>
+								<span class="name">
+									<span data-bind="user.firstName" class="first-name">Bob</span>
+									<span data-bind="user.lastName" class="last-name">Smith</span>
+								</span>
+								<span data-bind="user.email" class="email">bob@smith.com</span>
+  						</div>
+	  					<div class="empty">
+	  						<span data-bind="block.slot" class="slot">1</span>
+	  						<span class="hint inactive">Click to Schedule</span>
+	  						<div class="clear">
+	  					</div>
+  					</div>
+  				</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+
+<script src="jquery-1.11.0.js"></script>
+<script src="scheduler.js"></script>
+</body>
+</html>

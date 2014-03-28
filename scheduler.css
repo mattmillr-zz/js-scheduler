@@ -1,0 +1,197 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+.hide { display: none; }
+.template { display: none; }
+.clear { clear: both;}
+
+#menu {
+	padding: 4px;
+	font-size: 24px;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu ul li {
+	display: inline-block;
+}
+
+#menu ul li a { 
+	padding: 3px;
+	text-decoration: none;
+	color: #333;
+}
+
+#menu ul li a:hover {
+	background-color: #99f;
+	color: #000;
+}
+
+#menu ul li.active a {
+	background-color: #CCF;
+	color: #000;
+}
+
+#user-list {
+	float: left;
+	width: 200px;
+}
+
+
+#user-list ul {
+	list-style: none;
+}
+
+#user-list ul li {
+	background-color: #eee;
+	height: 30px;
+	margin: 2px 0px;
+	padding: 2px;
+}
+
+#user-list ul li.active {
+	background-color: #fff;
+}
+
+#user-list ul li div.color-dot {
+	float: right;
+	width: 15px;
+	height: 30px;
+}
+
+#user-list ul li span.name {
+	display: block;
+	font-size: 14px;
+}
+
+#user-list ul li span.email {
+	display: block;
+	font-size: 10px;
+	color: #666;
+}
+
+
+.view {
+	display: none;
+	margin-left: 210px;
+	margin-right: 20px;
+	
+}
+
+#user-admin {
+
+}
+
+
+#calendar {
+	padding: 20px 0px;
+}
+
+#calendar table {
+	border: 1px solid #eee;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#calendar table th {
+	text-align: left;
+	border: 1px solid #eee;
+	padding: 4px;
+}
+
+#calendar table td {
+	border: 1px solid #eee;
+	padding: 1px;
+}
+
+#calendar table td {
+	border: 1px solid #ccc;
+	color: #ccc;
+}
+
+#calendar table td div span.slot {
+	display: block;
+	float: left;
+	font-size: 24px;
+}
+
+#calendar table td div.empty {
+	padding: 3px 3px 3px 8px;
+}
+
+#calendar table td div.empty span.hint {
+	display: block;
+	margin-top: 5px;
+	font-size: 10px;
+	text-align: center;
+}
+
+#calendar table td div.scheduled {
+	border: 1px solid #ccc;
+	border-right-width: 10px;
+	padding: 3px 3px 3px 8px;
+}
+
+#calendar table td div.scheduled span.name {
+	display: block;
+	font-size: 14px;
+	color: #000;
+	margin-left: 30px;
+}
+
+#calendar table td div.scheduled span.email {
+	display: block;
+	font-size: 10px;
+	color: #666;
+	margin-left: 30px;
+}
+
+
+
+form {
+	width: 400px;
+	padding-top: 10px;
+}
+
+form div {
+	margin-bottom: 5px;
+}
+
+form label {
+	display: block;
+	float: left;
+	text-align: right;
+	width: 100px;
+	font-size: 14px;
+	padding-top: 4px;
+}
+
+form input {
+	display: block;
+	margin-left: 110px;
+	background-color: #eee;
+	font-size: 14px;
+	padding: 3px;
+	width: 290px;
+}
+
+form input[type='submit'] {
+	background-color: blue;
+	color: #fff;
+	padding: 5px;
+	font-weight: bold;
+	width: 70px;
+}
+
